@@ -1,0 +1,186 @@
+
+body {
+    background-color: #121212;
+    color: #f8f8f8; 
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-custom {
+    background: linear-gradient(45deg, #6e6f72, #561616); 
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ffeb3b; 
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: #fff; 
+}
+
+.navbar-custom.scrolled {
+    background: rgba(255, 105, 97, 0.8); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-custom .navbar-brand img {
+    transition: transform 0.3s;
+}
+
+.navbar-custom .navbar-brand img:hover {
+    transform: scale(1.1); 
+}
+
+.navbar-custom .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-custom .navbar-nav .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: #ffeb3b; 
+    transition: width 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 800px; 
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    bottom:400px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    bottom:400px;
+    
+}
+
+.hero-content h1, 
+.hero-content h4 {
+    margin: 0 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.hero-content .btn {
+    background-color: #e67e22; 
+    border: none;
+    color: #fff;
+}
+
+.hero-content .btn:hover {
+    background-color: #d35400; 
+}
+
+
+.gym-features {
+    padding: 50px 0;
+    background: #222;
+    bottom:200px;
+    position: relative;
+}
+
+.gym-features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gym-features .card-body {
+    background-color: #f3f1f1; 
+    border: none;
+    
+}
+
+.card-title, .card-text {
+    color: #050404; 
+}
+
+.card {
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    background-color: #444;
+ 
+}
+
+
+.footer {
+    background: linear-gradient(45deg, #6e6f72, #561616); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #f8f8f8;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer a:hover {
+    color: #e67e22; 
+}
+
+.form-control {
+    background-color: #333; 
+    border: 1px solid #444;
+    color: #f8f8f8;
+}
+
+.btn {
+    background-color: #e67e22; 
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #d35400; 
+}
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h4 {
+        font-size: 1.25rem;
+    }
+}
